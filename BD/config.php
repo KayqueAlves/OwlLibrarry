@@ -7,10 +7,4 @@
 
     $conexao = new mysqli($dbHost, $dbUserName, $dbPassword, $dbName);
 
-    if ($conexao->connect_error){
-        echo "erro";
-    } else {
-        echo "conectado";
-    }
- 
 ?>

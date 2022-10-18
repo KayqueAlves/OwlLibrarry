@@ -12,42 +12,13 @@
 
  <body>
 
-
-     <div class="box-genero"></div>
-
     <header class="header">
 
-        <a class="IconeSite" href="catalogo.html"><img src="Imagens/IconeHtml.png"></a>
-
-        <nav>
-            <ul class="menu">
-
-                <label for="check" id="icone"><a class="genero">Gêneros</a></label>
-                <a href="/">Sobre</a>
-                <a href="/">Contatos</a>
-                <a href="login.html" target="_blank">Login</a>
-
-            </ul>
-
-        </nav>
+        <a class="IconeSite" href="/Home/home.php"><img src="Imagens/IconeSimples.png"></a>
 
     </header>
 
-    <input type="checkbox" id="check">
-    
-        <div class="barra">	
-	<nav>
-		<a href=""><div class="link">Home</div></a>
-		<a href=""><div class="link">Fantasia</div></a>
-		<a href=""><div class="link">Ficção científica </div></a>
-		<a href=""><div class="link">Romance </div></a>
-		<a href=""><div class="link">Infantil</div></a>
-        <a href=""><div class="link">Ficção Policial </div></a>
-        <a href=""><div class="link">Ação e Aventira </div></a>
-        <a href=""><div class="link">Horror </div></a>
-        <a href=""><div class="link">Suspense </div></a>
-	</nav>	
-</div>
+    <button class="voltar"><a href="/Catalogo/catalogo.php">Voltar</a></button>
 
 <h1 class="titulo" >HARRY POTTER E O CALICE DE FOGO - 1ªED.(2017)</h1><br>
 <div class="autordiretor">autor:J. K. Rowling </a></span><br /><span id="lblNomProdutor">editora: Rocco</a></span></div>
@@ -55,12 +26,9 @@
 
 <div class="sinopse">
     <p id="lblSinopse">Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e não-mágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry. Além disso, ele terá que lidar ainda com os problemas comuns da adolescência - amor, amizade, aceitação e rejeição.</p>		            
-<a href="" class="button">ADICIONAR NO CARRINHO</a>
+<a href="" class="button">COMPRAR</a>
 </div>
-   <div class="img-livro">
-    <img src="Imagens/livro1.jpg">
-   </div>
-
-   <div class="icone">
-    <img src="Imagens/owl.png">
-   </div>
+  
+    <img class="img-livro" src="Imagens/livro1.jpg">
+   
+ </body>

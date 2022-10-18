@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de catálogo</title>
+    <title>Catálogo</title>
     <link rel="shortcut icon" href="Imagens/owl.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/catalago.css">
  
@@ -12,23 +12,15 @@
 
  <body>
 
-     <div class="box-genero"></div>
 
     <header class="header">
 
-        <a class="IconeSite" href="catalogo.html"><img src="Imagens/IconeSimples.png"></a>
-
         <nav>
             <ul class="menu">
-
                 <label for="check" id="icone"><a class="genero">Gêneros</a></label>
-                <a href="/">Sobre</a>
-                <a href="/">Contatos</a>
-                <a href="/Registro/login.html" target="_blank">Login</a>
-
             </ul>
-
         </nav>
+        <a class="iconeSite" href="/Perfil/usuario.php"><img src="Imagens/IconeSimples.png"></a>
 
     </header>
 
@@ -41,7 +33,7 @@
 		<a href=""><div class="link">Ficção científica </div></a>
 		<a href=""><div class="link">Romance </div></a>
 		<a href=""><div class="link">Infantil</div></a>
-        <a href=""><div class="link">Ficção Policial </div></a>
+        <a href=""><div class="link">PolFicção icial </div></a>
         <a href=""><div class="link">Ação e Aventira </div></a>
         <a href=""><div class="link">Horror </div></a>
         <a href=""><div class="link">Suspense </div></a>
@@ -50,7 +42,7 @@
 
    
         <form class="search-container">
-          <input type="text" id="search-bar" placeholder="Busca">
+          <input type="text" id="search-bar" placeholder=" Pesquisar">
           <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
         </form>
       
@@ -61,8 +53,8 @@
 
     <section class="flex">
         <div>
-            <img src="Imagens/livro1.jpg">
-            <a href="Livro1.html"> ADQUIRIR</a>
+            <img class="livroIMG" src="Imagens/livro1.jpg">
+            <a href="livro1.php"> ADQUIRIR</a>
             
 
         </div>

@@ -59,9 +59,22 @@ body{
     gap: 32px;
 }
 .info-item{
-    font-weight: 10px;
     font-size: 20px;
-    color: #FFF2E7;
+    color: #f7f6f5;
+}
+
+.info-item-top{
+    font-size: 20px;
+    color: #f7f6f5;
+    border-top: 0.4px solid #D9D9D9;
+    padding-top: 20px;
+}
+
+.info-item-bot{
+    font-size: 20px;
+    color: #f7f6f5;
+    border-bottom: 0.4px solid #D9D9D9;
+    padding-bottom: 20px;
 }
 
 .icone{

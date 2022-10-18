@@ -1,3 +1,17 @@
+<?php
+    session_start();
+
+    if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
+        
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: /Registro/login.php ');
+    }
+
+    $logado = $_SESSION['email'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +27,7 @@
     <header class="cabecalho">
         <img class="Icone" src="imagens/IconeSimples.png" alt="Logo simplificada do site">
         <nav class="menu">
-            <a href="" class="menu-item" >Catálogo</a>
+            <a href="/Catalogo/catalogo.php" class="menu-item" >Catálogo</a>
             <a href="../Home/home.php" class="menu-item" >Quem somos</a>
         </nav>
     </header>
@@ -34,10 +48,14 @@
             </div>
              
             <div id="perfil" class="conteudo">
-                <p class="info">Kayque Alves</p>
-                <P class="info">exemplo@gmail.com</P>
-                <p class="info">**********</p>
-                <button class="exit">Sair</button>
+                <div name="name" class="info">Kayque Alves</div>
+
+                <div name="email" class="info"><?php
+                    echo $logado;
+                ?></div>
+
+                <div name="senha" class="info">**********</div>
+                <a href="config/sair.php" class="exit">Sair</a>
             </div>
 
             <div id="estante" class="conteudo">
