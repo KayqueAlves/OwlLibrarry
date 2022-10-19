@@ -82,8 +82,6 @@ img {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    
-
 }
 
 .flex>div {
@@ -93,12 +91,13 @@ img {
 }
 
 .flex>div>a {
-    background-color: rgb(37, 46, 56);
-    border: none;
+    background-color:#51CDA0;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 3px;
-    width: 90px;
+    width: 290px;
     border-radius: 7px;
-    color: #FFFFFF;
+    color: black;
     
 }
 

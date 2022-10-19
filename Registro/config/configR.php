@@ -9,6 +9,8 @@
 
         if ($senha == $confirmar) {
             $result = mysqli_query($conexao, "INSERT INTO usuario (nome, email, senha) VALUES ('$name', '$email','$senha')");
+            header('location: /Registro/login.php');
+
         } else {
             header('location: /Registro/cadastro.php');
         }   

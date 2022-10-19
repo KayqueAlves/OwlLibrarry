@@ -14,7 +14,7 @@
         <a href="/Home/home.php"><img class="icone" src="imagens/iconTeste.png" alt="Icone do site"></a>
         <input name="nome" class="input-cadastro" type="text" placeholder="Nome" required>
         <input name="email" class="input-cadastro" type="email" placeholder="Email" required>
-        <input name="senha" class="input-cadastro" type="password" placeholder="Senha" required>
+        <input name="senha" class="input-cadastro" type="password" placeholder="Senha" minlength="8" required>
         <input name="confirmar" class="input-cadastro" type="password" placeholder="Confirme a senha" required>
         <button type="submit" name="submit" class="botao">Cadastrar</button>
         <a class="entrar" href="login.php">Já tem uma conta?</a></p>

@@ -33,7 +33,7 @@
 		<a href=""><div class="link">Ficção científica </div></a>
 		<a href=""><div class="link">Romance </div></a>
 		<a href=""><div class="link">Infantil</div></a>
-        <a href=""><div class="link">PolFicção icial </div></a>
+        <a href=""><div class="link">Mistério </div></a>
         <a href=""><div class="link">Ação e Aventira </div></a>
         <a href=""><div class="link">Horror </div></a>
         <a href=""><div class="link">Suspense </div></a>
@@ -54,55 +54,55 @@
     <section class="flex">
         <div>
             <img class="livroIMG" src="Imagens/livro1.jpg">
-            <a href="livro1.php"> ADQUIRIR</a>
+            <a href="livro1.php"> COMPRAR</a>
             
 
         </div>
 
         <div>
             <img src="Imagens/livro2.jpg">
-            <a href="Livro2.html">ADQUIRIR </a>
+            <a href="Livro2.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro3.jpg">
-            <a href="livro3.html">ADQUIRIR </a>
+            <a href="livro3.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro 4.jpg">
-            <a href="livro4.html">ADQUIRIR </a>
+            <a href="livro4.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro5.jpg">
-            <a href="livro5.html">ADQUIRIR </a>
+            <a href="livro5.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro6.jpg">
-            <a href="livro6.html">ADQUIRIR</a>
+            <a href="livro6.html">COMPRAR</a>
 
         </div>
         <div>
             <img src="Imagens/livro7.jpg">
-            <a href="livro7.html">ADQUIRIR </a>
+            <a href="livro7.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro8.jpg">
-            <a href="livro8.html">ADQUIRIR </a>
+            <a href="livro8.html">COMPRAR </a>
 
         </div>
 
         <div>
             <img src="Imagens/livro9.jpg">
-            <a href="livro9.html">ADQUIRIR</a>
+            <a href="livro9.html">COMPRAR</a>
 
     </section>
     
