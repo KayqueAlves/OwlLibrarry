@@ -35,7 +35,7 @@ body{
 }
 
 .perfil{
-    background: url('/Perfil/Imagens/Tucked\ in.jpg');
+    background: url('/Home/Imagens/imgPD.png');
     background-size:contain;
     background-repeat:no-repeat;
     -webkit-background-size:cover;

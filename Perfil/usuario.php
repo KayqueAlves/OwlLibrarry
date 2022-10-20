@@ -53,13 +53,13 @@
             </div>
         </section>
         
-        <section class="information">
+        <form class="information" method="POST">
             <div class="avatar">
-                <img width="360" height="360" class="avatar-user" src="imagens/Tucked in.jpg" alt="">
-                <button class="edit-avatar">Editar</button>
+                <img width="360" height="360" class="avatar-user" src="Imagens/imgPD.png" alt="">
+                <button name="submit" type="submit" class="edit-avatar">Editar</button>
             </div>
              
-            <form id="perfil" class="conteudo">
+            <div id="perfil" class="conteudo">
                 <input name="name" type="text" class="info" disabled value="<?php echo implode($nomeInf); ?>">
 
                 <input name="email" type="text" class="info" disabled value="<?php echo $emailInf; ?>">
@@ -67,7 +67,7 @@
                 <input type="password" name="senha" class="info" disabled value="<?php echo $senhaInf; ?>">
 
                 <a href="config/sair.php" class="exit">Sair</a>
-            </form>
+            </div>
 
             <div id="estante" class="conteudo">
                 <div class="box-book"></div>
@@ -77,7 +77,7 @@
                 <div class="box-book"></div>
             </div>
 
-        </section>
+        </form>
     </main>
 <script src="JS/usuario.js"></script>
 </body>
