@@ -77,11 +77,14 @@ body{
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #757575;
     border-radius: 10px;
-    margin: 10%;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    flex-direction: column;
     color: #5D5D5D;
     font-size: 22px;
     width: 550px;
-    height: 45px;
+    height: 50px;
     padding: 7px;
 }
 
@@ -90,7 +93,7 @@ body{
     color: white;
     border-radius: 20px;
     border: none;
-    padding-inline: 15px;
+    padding-inline: 20px;
     font-size: 25px;
     margin-top: 20%;
     margin-left: 100%;

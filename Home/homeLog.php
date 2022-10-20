@@ -1,4 +1,15 @@
+<?php
 
+session_start();
+
+if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
+    
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('Location: /Registro/login.php ');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +17,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/owl.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/homeLog.css">
     <title>OwlLibrary</title>
 </head>
 <body>
     <header class="cabecalho">
         <nav class="menu">
-           <a href="../Registro/login.php" class="but-entrar">Entrar</a>
-           <a href="../Registro/cadastro.php" class="but-criar">Criar conta</a>
+           <a href="../Catalogo/catalogo.php" class="catalogo">Catálogo</a>
+           <input type="button" onclick="location.href='../Perfil/usuario.php'" class="perfil">
         </nav>
     </header>
 

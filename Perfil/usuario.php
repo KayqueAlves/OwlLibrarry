@@ -8,7 +8,19 @@
         header('Location: /Registro/login.php ');
     }
 
-    $logado = $_SESSION['email'];
+    $emailInf = $_SESSION['email'];
+    $senhaInf = $_SESSION['senha'];
+
+    include_once('../BD/config.php');
+
+    $sql = "SELECT nome FROM usuario WHERE email = '$emailInf'";
+
+    $result = $conexao->query($sql);
+
+    if ($result->num_rows > 0) {
+        $nomeInf = $result->fetch_assoc();
+    }    
+
 
 ?>
 
@@ -17,8 +29,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    <title>OwlLibrary</title>
     <link rel="shortcut icon" href="Imagens/owl.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/usuario.css">
 </head>
@@ -28,7 +40,7 @@
         <img class="Icone" src="imagens/IconeSimples.png" alt="Logo simplificada do site">
         <nav class="menu">
             <a href="/Catalogo/catalogo.php" class="menu-item" >Catálogo</a>
-            <a href="../Home/home.php" class="menu-item" >Quem somos</a>
+            <a href="../Home/homeLog.php" class="menu-item" >Quem somos</a>
         </nav>
     </header>
 
@@ -47,16 +59,15 @@
                 <button class="edit-avatar">Editar</button>
             </div>
              
-            <div id="perfil" class="conteudo">
-                <div name="name" class="info">Kayque Alves</div>
+            <form id="perfil" class="conteudo">
+                <input name="name" type="text" class="info" disabled value="<?php echo implode($nomeInf); ?>">
 
-                <div name="email" class="info"><?php
-                    echo $logado;
-                ?></div>
+                <input name="email" type="text" class="info" disabled value="<?php echo $emailInf; ?>">
 
-                <div name="senha" class="info">**********</div>
+                <input type="password" name="senha" class="info" disabled value="<?php echo $senhaInf; ?>">
+
                 <a href="config/sair.php" class="exit">Sair</a>
-            </div>
+            </form>
 
             <div id="estante" class="conteudo">
                 <div class="box-book"></div>

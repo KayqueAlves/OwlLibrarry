@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background: linear-gradient(90.44deg, #2ED0A0 0%, #0C110D 99.38%);
+}
+
+.cabecalho{
+
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone{
+    height: 42px;
+}
+
+
+.barra{
+    border-bottom: 0.4px solid #D9D9D9;
+}
+
+
+.forma-pagamento{
+    display: flex;
+    flex-direction: row;
+} 
+
+.pagamentoF{
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.inp{
+    background-color: #C4C4C4;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
+    margin-left: 2%;
+}
+
+.input-C{
+    background: rgba(196, 196, 196, 0.26);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+    width: 700px;
+    height: 60px;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.input-C label{
+    color: white;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+.input-P{
+    background: rgba(196, 196, 196, 0.26);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+    width: 700px;
+    height: 60px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.input-P label{
+    color: white;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+.dados{
+    background: rgba(196, 196, 196, 0.26);
+    border-radius: 7px;
+    width: 500px;
+    height: 600px;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.livro{
+    display: flex;
+    flex-direction: row;
+}
+
+.livro-img{
+    border-radius: 7px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.titulo{
+    font-size: 40px;
+    color: white;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+.info-livro-top{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+.info-livro-but{
+    border-top: 0.4px solid #D9D9D9;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.dado-final{
+    color: white;
+    background: rgba(196, 196, 196, 0.26);
+    padding-top: 10px;
+    margin-top: 1%;
+    padding-bottom: 20px;
+}
+
+.pagamento{
+    font-size: 25px;
+    margin-left: 1%;
+}
+
+.valor{
+    color: #C5C5C5;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.comprar{
+    background-color: #51CDA0;
+    font-size: 40px;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    width: 500px;
+    height: 101px;
+    cursor: pointer;
+}
+
+
