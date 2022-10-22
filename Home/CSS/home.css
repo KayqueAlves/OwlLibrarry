@@ -81,3 +81,18 @@ body{
     height: 500px;
     margin-left: 1%;
 }
+
+@media (max-width: 1000px){
+    .conteudo-p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        margin-top: 5%;
+    }
+
+    .icone{
+        height: 150px;
+    }
+}

@@ -3,6 +3,6 @@
     session_start();
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('location: /Registro/login.php ');
+    header('location: /Home/home.php ');
 
 ?>

@@ -25,7 +25,7 @@
             <div class="info">
                 <h1 class="info-item-top">A Owl Library é uma biblioteca virtual criada por um pequeno grupo de estudantes</h1>
                 <h1 class="info-item">Com diversas opções de livros, desde clássicos da literaura até livros acadêmicos</h1>
-                <h1 class="info-item-bot">Encontre seus livros favoritos ou descubra novas experiênciass</h1>
+                <h1 class="info-item-bot">Encontre seus livros favoritos ou descubra novas experiências</h1>
             </div>
         </section>
     </main>

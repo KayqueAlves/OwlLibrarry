@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+.cabecalho{
+    background: linear-gradient(90deg, #2ED0A0 0%, #0F1611 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.Icone{
+    height: 42px;
+}
+
+.perfil{
+    background: url('/Home/Imagens/imgPD.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding: 1px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    background: rgba(196, 196, 196, 0.26);
+    border: 1px solid #757575;
+    border-radius: 7px;
+    margin-top: 5%;
+    width: 1200px;
+    height: 600px;
+}
+
+.voltar {
+    background: url(/Catalogo/Imagens/Polygon\ 3.png);
+    background-size: 15px;
+    background-position:center;
+    background-repeat:no-repeat;
+    border: 1px solid #757575;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    
+}
+
+.livro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.capa{
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.preco{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 1px solid black;
+    border-radius: 9px;
+    width: 90px;
+}
+
+.comprar{
+    background: #51CDA0;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 30px;
+    width: 250px;
+    height: 45px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 3%;
+}
+
+.info input{
+    background: none;
+    color: black;
+    border: none;
+}
+
+.titulo{
+    font-size: 28px;
+}
+
+.publicacao{
+    font-size: 24px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.autor{
+    font-size: 24px;
+    margin-bottom: 4%;
+}
+
+.sinopse{
+    font-size: 22px;
+    width: 700px;
+    height: 200px;
+}
+
+h1{
+    margin-bottom: 4%;
+}

@@ -1,15 +1,5 @@
-<?php
+<?php include '../BD/logado.php' ; ?>
 
-session_start();
-
-if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
-    
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header('Location: /Registro/login.php ');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +22,7 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true
     <main>
         <div class="genero">
             <div class="generos">
-                <input class="pesquisa" type="text" value="Pesquisar">
+                <input class="pesquisa" type="text" placeholder="Pesquisar">
                 <button class="genero-but">gêneros</button>    
                 <ul>
                     <li><p>Fantasia</p></li>
@@ -50,7 +40,7 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true
                             <img class="img-livro" src="Imagens/livro1.jpg">
                             <div class="infoC">
                                 <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" onclick="location.href='../Catalogo/livro1.php'" value="Saiba mais">
+                                <input class="saibaM" type="button" onclick="location.href='../Catalogo/livro.php'" value="Saiba mais">
                             </div>
                             <div class="comprar">
                                 <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               

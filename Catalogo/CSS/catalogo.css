@@ -47,6 +47,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
     margin-top: 7%;
 }
 .genero-but{
@@ -84,6 +85,7 @@ ul{
     background-color: #217859;
     color: white;
     display: flex;
+    border: 1px solid black;
     flex-direction: column;
     border-radius: 4px;
     font-size: large;
@@ -108,11 +110,17 @@ li:hover{
     background: rgba(196, 196, 196, 0.26);
     border: 1px solid #757575;
     border-radius: 7px;
-    width: 1300px;
+    width: 1400px;
     height: 600px;
     margin-top: 3.7%;
     margin-left: 2%;
     position: relative;
+}
+
+@media (max-width: 1500px){
+    .caixa{
+        width: 800px;
+    }
 }
 
 .livros{

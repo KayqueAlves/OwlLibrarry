@@ -1,15 +1,5 @@
-<?php
+<?php include '../BD/logado.php' ; ?>
 
-session_start();
-
-if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
-    
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header('Location: /Registro/login.php ');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +14,16 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true
 
 <body>
     <header class="cabecalho">
+
+        <input type="button" class="voltar" onclick="location.href='/Catalogo/catalogo.php';">
+
         <div class="logo">
             <a href="/Home/homeLog.php"><img class="icone" src="imagens/IconeSimples.png" alt="Logo simplificada do site"></a>
         </div>
+        <div></div>
     </header>
 
     <div class="barra"></div>
-
 
     <form class="forma-pagamento" action="">
 
@@ -44,7 +37,7 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true
 
         <div class="input-P">        
             <input class="inp" type="radio" id="P">
-            <label for="P">PayPal</label>
+            <label for="P">Pagar no boleto</label>
         </div>
 
     </div>
@@ -68,7 +61,7 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true
             <div class="dado-final">
                     <p class="pagamento">Método de pagamento:</p>
                 <div class="valor">
-                    <p>PayPal</p>
+                    <p>Boleto</p>
                     <p>R$ 99,99</p>
                 </div>
             </div>
