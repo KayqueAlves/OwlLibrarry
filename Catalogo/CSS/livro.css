@@ -133,6 +133,7 @@ main{
 
 .autor{
     font-size: 24px;
+    margin-top: 2%;
     margin-bottom: 4%;
 }
 
@@ -145,3 +146,21 @@ main{
 h1{
     margin-bottom: 4%;
 }
+
+.fav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fav p {
+    font-size: 25px;
+}
+
+.fav-icon{
+    width: 29px;
+    height: 29px;
+}
+
+
+

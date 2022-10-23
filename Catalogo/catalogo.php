@@ -1,4 +1,4 @@
-<?php include '../BD/logado.php' ; ?>
+<?php include_once '../BD/logado.php' ; ?>
 <?php include '../BD/config.php' ; ?>
 
 
@@ -49,12 +49,13 @@
 
                         $preco = $dados['preco'];
                         $img = $dados['capa'];   
+                        $id = $dados['id_livro'];
                 ?>
                         <div class="book-border">
                             <img class="img-livro" src="Imagens/<?=$img;?>">
                             <div class="infoC">
                                 <input class="preco" type="text" value=" R$<?=$preco;?>,00" disabled>
-                                <input class="saibaM" type="button" onclick="location.href='../Catalogo/livro.php'" value="Saiba mais">
+                                <a href="../Catalogo/livro.php?id=<?=$id;?>" class="saibaM" >Saiba mais</a>
                             </div>
                             <div class="comprar">
                                 <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               

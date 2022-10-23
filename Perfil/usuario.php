@@ -6,6 +6,7 @@
     include ('../BD/config.php');
 
     $sql = "SELECT * FROM usuario WHERE email = '$emailInf'";
+    
 
     $result = $conexao->query($sql);
 
@@ -50,6 +51,7 @@
             </div>
              
             <div id="perfil" class="conteudo">
+                
                 <input name="name" type="text" class="info" disabled value="<?php echo $row['nome']; ?>">
 
                 <input name="email" type="text" class="info" disabled value="<?php echo $emailInf; ?>">
