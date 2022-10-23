@@ -63,9 +63,15 @@ main{
     justify-content: center;
 }
 
+.barra-pesquisa{
+    display: flex;
+    flex-direction: row;
+}
+
 .pesquisa{
     background-color: white;
     border: 1px solid #757575;
+    display: flex;
     border-radius: 5px;
     margin-left: 1%;
     width: 200px;
@@ -74,6 +80,18 @@ main{
     font-size: 20px;
     margin-bottom: 1%;
     color: #757575;
+}
+
+.but-pesquisa{
+    background: url(/Catalogo/Imagens/Group\ 2.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    margin-left: 2px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
 }
 
 .genero{

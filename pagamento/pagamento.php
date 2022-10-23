@@ -30,13 +30,13 @@
     <div class="pagamentoF">
 
         <div class="input-C">
-            <input class="inp" type="radio" id="C">
+            <input class="inp" type="checkbox" id="C">
             <label for="C">Cartão de crédito</label>
         </div>
             
 
         <div class="input-P">        
-            <input class="inp" type="radio" id="P">
+            <input class="inp" type="checkbox" id="P">
             <label for="P">Pagar no boleto</label>
         </div>
 

@@ -1,4 +1,6 @@
 <?php include '../BD/logado.php' ; ?>
+<?php include '../BD/config.php' ; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +20,13 @@
         </a>
         <input type="button" onclick="location.href='../Perfil/usuario.php'" class="perfil">
     </header>
-
     <main>
         <div class="genero">
             <div class="generos">
-                <input class="pesquisa" type="text" placeholder="Pesquisar">
+                <div class="barra-pesquisa">
+                    <input class="pesquisa" type="search" placeholder="Pesquisar" id="pesquisar">
+                    <button class="but-pesquisa" onclick="searchData()"></button>
+                </div>
                 <button class="genero-but">gêneros</button>    
                 <ul>
                     <li><p>Fantasia</p></li>
@@ -36,70 +40,34 @@
             
             <div style="overflow-y: scroll;" class="caixa">
                 <div class="livros">
+                <?php
+
+                    $sql = "SELECT * FROM livro WHERE id_livro ORDER BY RAND()";
+                    $result = $conexao->query($sql);
+
+                    while($dados = mysqli_fetch_assoc($result)){
+
+                        $preco = $dados['preco'];
+                        $img = $dados['capa'];   
+                ?>
                         <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro1.jpg">
+                            <img class="img-livro" src="Imagens/<?=$img;?>">
                             <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
+                                <input class="preco" type="text" value=" R$<?=$preco;?>,00" disabled>
                                 <input class="saibaM" type="button" onclick="location.href='../Catalogo/livro.php'" value="Saiba mais">
                             </div>
                             <div class="comprar">
                                 <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
                             </div>
                         </div>     
-                        <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro2.jpg">
-                            <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" value="Saiba mais">
-                            </div>
-                            <div class="comprar">
-                                <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
-                            </div>
-                        </div>        
-                        <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro3.jpg">
-                            <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" value="Saiba mais">
-                            </div>
-                            <div class="comprar">
-                                <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
-                            </div>
-                        </div>        
-                        <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro4.jpg">
-                            <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" value="Saiba mais">
-                            </div>
-                            <div class="comprar">
-                                <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
-                            </div>
-                        </div>        
-                        <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro5.jpg">
-                            <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" value="Saiba mais">
-                            </div>
-                            <div class="comprar">
-                                <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
-                            </div>
-                        </div>        
-                        <div class="book-border">
-                            <img class="img-livro" src="Imagens/livro6.jpg">
-                            <div class="infoC">
-                                <input class="preco" type="text" value=" R$99,99" disabled>
-                                <input class="saibaM" type="button" value="Saiba mais">
-                            </div>
-                            <div class="comprar">
-                                <a class="comprar-a" href="/pagamento/pagamento.php">COMPRAR</a>               
-                            </div>
-                        </div>            
+                        <?php
+                    }
+                        ?>
                 </div>
             </div>    
         </div>
  
     </main>
 </body>
+<script src="/Catalogo/JS/search.js"></script>
 </html>

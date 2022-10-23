@@ -7,13 +7,12 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM usuario WHERE email = '$email' and senha = '$senha' ";
-
+        $sql = "SELECT * FROM usuario WHERE email = '$email'";
         $result = $conexao->query($sql);
 
-        print_r($result);
+        $verify = $result->fetch_assoc();
 
-        if (mysqli_num_rows($result) < 1) {
+        if (password_verify($senha, $verify['senha']) == false) {
             
         header('Location: /Registro/login.php');
 

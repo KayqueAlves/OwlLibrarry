@@ -2,16 +2,15 @@
 
 <?php
     $emailInf = $_SESSION['email'];
-    $senhaInf = $_SESSION['senha'];
 
-    include_once('../BD/config.php');
+    include ('../BD/config.php');
 
-    $sql = "SELECT nome FROM usuario WHERE email = '$emailInf'";
+    $sql = "SELECT * FROM usuario WHERE email = '$emailInf'";
 
     $result = $conexao->query($sql);
 
     if ($result->num_rows > 0) {
-        $nomeInf = $result->fetch_assoc();
+        $row = $result->fetch_assoc();
     }    
 ?>
 
@@ -51,11 +50,11 @@
             </div>
              
             <div id="perfil" class="conteudo">
-                <input name="name" type="text" class="info" disabled value="<?php echo implode($nomeInf); ?>">
+                <input name="name" type="text" class="info" disabled value="<?php echo $row['nome']; ?>">
 
                 <input name="email" type="text" class="info" disabled value="<?php echo $emailInf; ?>">
 
-                <input type="password" name="senha" class="info" disabled value="<?php echo $senhaInf; ?>">
+                <input type="password" name="senha" class="info" disabled value="<?php echo $row['senha']; ?>">
 
                 <a href="config/sair.php" class="exit">Sair</a>
             </div>

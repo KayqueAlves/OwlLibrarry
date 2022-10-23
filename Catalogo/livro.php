@@ -27,7 +27,6 @@
                 <img class="capa" width="250px" src="/Catalogo/Imagens/livro1.jpg" alt="">
                 <div class="fav">
                     <input class="preco" type="text" value="R$99,99" disabled>
-                    
                 </div>
                  <a class="comprar" href="/pagamento/pagamento.php">COMPRAR</a>
                 
